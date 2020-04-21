@@ -18,6 +18,7 @@ var users = new Users();
 
 io.on('connection', (socket) => {
 
+  consle.log("new connection trigger");
   socket.on('join', (params, callback) => {
     if(!isValidString(params.username) || !isValidString(params.chatroom)){
       return callback("Either of username or chat room name is not valid");
