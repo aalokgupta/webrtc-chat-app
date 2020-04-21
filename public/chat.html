@@ -1,0 +1,46 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src = "/libs/jquery-3.2.1.min.js"></script>
+  <script src = "/libs/deparam.js"></script>
+</head>
+
+<body>
+
+  <div class = "grid-layout">
+    <div class = "header">Chat app</div>
+    <div class = "user-list">
+      <h2>People </h2>
+      <ol class =  "ol-user" id = "ol-users">
+      </ol>
+    </div>
+    <!-- <div class = "user-name">
+      <input type = "text" placeholder = "your name plz" id = "text-user-name"/>
+    </div> -->
+    <div class = "receive-message">
+        <div><ol id = "ol-received-message"  class = "ol-received-message"></ol></div>
+      </div>
+
+      <!-- <input type = "text" class = "text-type" id = "text-received-message"/> -->
+  <div class = "footer">
+    <div class = "sent-message">
+    <input type = "text" placeholder = "type your msg" class = "text-type" id = "text-sent-message" focused/>
+  </div>
+    <div class = "send-button">
+      <input type = "button" value = "Send message" class = "btn" id = "btn-send-message"/>
+    </div>
+    <div class = "send-location">
+        <input type = "button" value = "Send location" class = "btn" id = "btn-send-location"/>
+    </div>
+
+
+  </div>
+</div>
+
+  <script src = "/socket.io/socket.io.js"></script>
+  <script src = "/js/chat.js"></script>
+  <script src = "/js/moment.js"></script>
+
+</body>
+</html>
